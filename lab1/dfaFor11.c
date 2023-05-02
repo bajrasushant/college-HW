@@ -6,6 +6,17 @@
 void checkString(char s);
 void checkDFA(char s[]);
 
+
+int main(void) 
+{
+    char str[MAX];
+    printf("Enter the string to check(of length 10): ");
+    scanf("%s", str);
+    checkDFA(str);
+    return 0;
+}
+
+
 void checkDFA(char s[])
 {
     char state = 'a';
@@ -41,13 +52,4 @@ void checkString(char s)
     else{
         printf("String not accepted.\n");
     }
-}
-
-int main(void) 
-{
-    char str[MAX];
-    printf("Enter the string to check(of length 10): ");
-    scanf("%s", str);
-    checkDFA(str);
-    return 0;
 }
